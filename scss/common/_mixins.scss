@@ -1,0 +1,21 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-center-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin button-styles($background-color, $color, $border-color: $color, $font-size, $width, $height) {
+  width: $width;
+  height: $height;
+  background-color: $background-color;
+  color: $color;
+  border: 1px solid $border-color;
+  font-size: $font-size;
+  cursor: pointer;
+}

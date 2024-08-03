@@ -1,0 +1,28 @@
+.about__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.about__title {
+  font-size: 40px;
+  color: $dark-blue;
+  font-weight: bold;
+}
+
+.about__description {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.about__content-employees {
+  display: flex;
+  gap: 30px;
+}

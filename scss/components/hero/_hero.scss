@@ -1,0 +1,35 @@
+.hero__inner {
+  @include flex-center-between;
+  gap: 30px;
+  flex-wrap: wrap;
+
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .hero__content-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero__title {
+    color: $dark-blue;
+    font-size: 60px;
+  }
+
+  .hero__title-highlightedText {
+    color: $green;
+  }
+
+  .hero__description {
+    color: $light-pink;
+  }
+
+  .hero__button {
+    @include button-styles($white, $green, $font-size: 20px,
+    $width: 227px, $height: 65px);
+  }
+}

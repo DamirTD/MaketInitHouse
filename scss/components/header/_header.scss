@@ -1,0 +1,31 @@
+.header {
+  background-color: $light-white;
+  padding: 40px 0 40px 0;
+
+  .header__inner {
+    @include flex-center-between;
+  }
+
+  .header__logo {
+    @include flex-center;
+    gap: 10px;
+    cursor: pointer;
+  }
+
+  .header__logo-text {
+    color: $green;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .header__menu-items {
+    @include flex-center;
+    gap: 60px;
+    font-size: 20px;
+  }
+
+  .header__menu-link {
+    color: $dark-blue;
+    font-weight: 600;
+  }
+}

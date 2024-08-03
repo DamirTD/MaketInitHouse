@@ -1,0 +1,103 @@
+.products__inner {
+  @include flex-center;
+  flex-direction: column;
+  gap: 20px;
+
+  .products__menu {
+    @include flex-center-between;
+    width: 100%;
+  }
+
+  .products__title {
+    font-weight: 600;
+    font-size: 40px;
+    color: $dark-blue;
+    margin-bottom: 30px;
+  }
+
+  .products__list {
+    display: flex;
+    gap: 32px;
+  }
+
+  .products__link {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: $light-green;
+    color: $dark-blue;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      color: $white;
+      background-color: $green;
+    }
+
+    &:focus {
+      color: $light-green;
+      background-color: $dark-blue;
+    }
+
+    &:active {
+      color: $white;
+      background-color: $green;
+    }
+  }
+
+  .products__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+  }
+
+  .product-card {
+    @include flex-center;
+    flex-direction: column;
+    background-color: $light-white;
+    padding: 20px 20px 30px 20px;
+  }
+
+  .product-card__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    width: 100%;
+  }
+
+  .product-card__author {
+    color: $light-pink;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .product-card__title {
+    color: $dark-blue;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .product-card__description {
+    color: $dark-blue;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .product-card__price {
+    color: $green;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .product-card__button {
+    @include button-styles($light-green, $green, $font-size: 20px,
+    $width: 310px, $height: 65px);
+  }
+}
