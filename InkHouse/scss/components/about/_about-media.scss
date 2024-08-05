@@ -1,0 +1,36 @@
+@include desktop {
+
+}
+
+@include tablet {
+  .about__inner {
+    flex-direction: column;
+  }
+
+  .about__image {
+    width: 413px;
+    height: 510px;
+  }
+
+  .about__title {
+    font-size: 30px;
+    line-height: 110%;
+  }
+
+  .about__description {
+    font-size: 18px;
+    lineheight: 150%;
+  }
+
+}
+
+@include tablet_small {
+
+}
+
+@include mobile {
+  .about__image {
+    width: 234px;
+    height: 290px;
+  }
+}

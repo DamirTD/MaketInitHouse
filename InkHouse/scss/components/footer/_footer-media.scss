@@ -1,0 +1,31 @@
+@include tablet {
+
+  .footer__inner {
+    display: unset !important;
+  }
+
+  .footer__top {
+    flex-direction: unset !important;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  .footer__menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+@include tablet_small {
+  .footer__bottom {
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid gray;
+    width: 100%;
+  }
+}
+
+@include mobile {
+
+}

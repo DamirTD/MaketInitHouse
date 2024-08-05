@@ -1,0 +1,67 @@
+@include tablet {
+  .header__inner {
+    flex-wrap: nowrap;
+    margin: 0 10px;
+  }
+  .header__menu-item {
+    font-size: 18px;
+  }
+  .hero__title {
+    font-size: 40px;
+    max-width: 330px;
+  }
+}
+
+@include tablet_small {
+  .header {
+    padding: 20px 0 !important;
+  }
+
+  .header__inner {
+    display: unset !important;
+
+  }
+
+  .header__logo {
+    border-bottom: 1px solid #598D66;
+  }
+
+}
+
+@include mobile {
+  .header__menu {
+    display: none !important;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: $light-white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    &.open {
+      display: block !important;
+    }
+
+    .header__menu-items {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .header__cart {
+      display: unset !important;
+    }
+  }
+
+  .header__logo {
+    border-bottom: none;
+  }
+
+  .header__menu-item {
+    font-size: 18px;
+  }
+
+  .burger-menu {
+    display: flex !important;
+  }
+}

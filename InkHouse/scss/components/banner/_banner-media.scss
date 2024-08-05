@@ -1,0 +1,52 @@
+@include desktop {
+
+}
+
+@include tablet {
+
+  .banner {
+    height: 70vh;
+  }
+
+  .banner__topic {
+    margin-top: 70px !important;
+  }
+
+  .banner__title {
+    font-size: 30px !important;
+  }
+
+  .banner__description {
+    max-width: 690px !important;
+  }
+
+  .banner__button {
+    margin-bottom: 70px !important;
+  }
+}
+
+@include tablet_small {
+
+}
+
+@include mobile {
+
+  .banner {
+    height: 85vh;
+  }
+
+  .banner__topic {
+    margin-top: 50px !important;
+  }
+
+  .banner__title {
+    font-size: 24px !important;
+  }
+
+  .banner__description {
+    max-width: 290px !important;
+    font-size: 16px !important;
+  }
+
+
+}

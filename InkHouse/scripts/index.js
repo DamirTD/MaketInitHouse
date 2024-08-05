@@ -1,3 +1,7 @@
+document.querySelector('.burger-menu').addEventListener('click', function() {
+    document.querySelector('.header__menu').classList.toggle('open');
+});
+
 // Объект products хранит информацию о продуктах, разделенных по категориям: Франция, Германия, Англия.
 const products = {
     france: [

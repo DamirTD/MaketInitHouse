@@ -1,7 +1,6 @@
 .hero__inner {
   @include flex-center-between;
   gap: 30px;
-  flex-wrap: wrap;
 
   .hero__content {
     display: flex;
